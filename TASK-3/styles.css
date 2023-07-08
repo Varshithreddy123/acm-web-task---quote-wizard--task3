@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+   background: #bbc6fa;
+
+}
+.Quotebox{
+    background: #ffff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px right(0, 0, 0, 0.15);
+}
+.Quotebox h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.Quotebox h2::after{
+    content: ' ' ;
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    background: rgb(23, 124, 229);
+    bottom: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Quotebox blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.Quotebox blockquote::before, .Quotebox blockquote::after{
+    content: '"' ;
+}
+.Quotebox span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.Quotebox span::before{
+    content: ' ' ;
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left:-35%;
+}
+.Quotebox div{
+    width: 100%;
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+}
+.Quotebox button{
+    background: rgb(23, 124, 229);
+    color: #e4dbdb;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.Quotebox button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.Quotebox button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
